@@ -1,15 +1,20 @@
 import "./App.css";
 
-function Box({ label }: { label: string }) {
-  return <div className="box">{label}</div>;
-}
-
 export default function App() {
   return (
-    <div className="container">
-      <Box label="A" />
-      <Box label="B" />
-      <Box label="C" />
+    <div className="app">
+      <header className="header">Header</header>
+
+      <main className="main">
+        <aside className="sidebar">Sidebar</aside>
+
+        <section className="content">
+          <section className="toolbar">Toolbar</section>
+          <section className="workspace">Workspace</section>
+        </section>
+      </main>
+
+      <footer className="footer">Footer</footer>
     </div>
   );
 }
