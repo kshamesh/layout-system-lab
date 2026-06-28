@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.box {
+  border: 2px solid;
+  padding: 16px;
+}
+
+.box:first-child {
+  flex-grow: 1;
+}
+
+.box:nth-child(2) {
+  flex-grow: 2;
+}
+
+.box:nth-child(3) {
+  flex-grow: 1;
+}
